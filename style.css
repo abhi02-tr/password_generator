@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: blue;
+}
+
+.container{
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+
+}
+
+.container h2{
+    /* font-weight: 600; */
+    padding: 1rem 1.6rem;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.wrapper{
+    /* margin: 20px; */
+    margin: 2rem;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 0 2rem 0 1rem;
+}
+
+.wrapper .input-box{
+    position: relative;
+}
+
+.input-box span{
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    cursor: pointer;
+}
+
+.wrapper .pass-indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: #d5d5d5;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: yellow;
+}
+
+.wrapper .pass-length{
+    margin: 1.5rem 0 1.25rem;
+
+}
+
+.pass-length .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-length input{
+    width: 100%;
+    height: 5px;
+}
+
+.pass-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
