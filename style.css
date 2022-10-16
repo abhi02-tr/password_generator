@@ -65,7 +65,22 @@ body{
     content: "";
     height: 100%;
     width: 50%;
-    background: yellow;
+    /* background: yellow; */
+}
+
+.pass-indicator#weak::before{
+    width: 20%;
+    background-color: #E64A4A;
+}
+
+.pass-indicator#medium::before{
+    width: 50%;
+    background-color: yellow;
+}
+
+.pass-indicator#strong::before{
+    width: 100%;
+    background-color: green;
 }
 
 .wrapper .pass-length{
@@ -106,10 +121,10 @@ body{
 
 }
 
-.pass-settings .options .option label{
+/* .pass-settings .options .option label{
     /* height: 10px;
-    width: 10px; */
-}
+    width: 10px; 
+} */
 
 .pass-settings .options .option label{
     margin-left: 10px;
